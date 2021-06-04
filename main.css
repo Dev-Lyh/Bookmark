@@ -1,0 +1,18 @@
+:root{
+    --SoftBlue: hsl(231, 69%, 60%);
+    --ShadowBlue: hsla(231, 40%, 39%, 0.671);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayBlue: hsl(229, 8%, 60%);
+    --DarkBlue: hsl(229, 31%, 21%);
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(0, 0%, 85%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    font-size: 18px;
+}
