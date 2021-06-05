@@ -60,6 +60,7 @@ ul{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    padding: 0 100px;
 }
 .hero-part::before{
     content: '';
@@ -153,46 +154,84 @@ ul{
     align-items: center;
     height: 82px;
     width: 720px;
-    border-bottom: 2px solid var(--LightGray);
+    border-bottom: 1px solid var(--LightGray);
 
+}
+
+.carrousel-feat1 , .carrousel-feat2, .carrousel-feat3{
+    display: flex;
+    padding: 0px 100px;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.carrousel-feat1::before , .carrousel-feat2::before, .carrousel-feat3::before{
+    content: '';
+    position: absolute; 
+    z-index: -1;
+    width: 500px;
+    height: 330px;
+    background-color: var(--SoftBlue);
+    border-bottom-right-radius: 200px;
+    left: 0;
+    top: 1100px;
+}
+.text-feat{
+    padding-left: 80px;
+}
+.text-feat button{
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.carrousel-feat1 p , .carrousel-feat2 p , .carrousel-feat3 p{
+    color: var(--GrayBlue);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 28px;
+}
+.carrousel-feat1 h2 , .carrousel-feat2 h2, .carrousel-feat3 h2{
+    color: var(--DarkBlue);
+    margin-bottom: 25px;
+}
+.carrousel-feat1 , .carrousel-feat2, .carrousel-feat3{
+    display: none;    
+}
+input#checkbtnOne:checked~.carrousel-feat1{
+    display: flex;
+}
+input#checkbtnTwo:checked~.carrousel-feat2{
+    display: flex;
+    bottom: 0;
+}
+input#checkbtnThree:checked~.carrousel-feat3{
+    display: flex;
+}
+input[type="radio"]#checkbtnOne{
+    display: none;
+}
+input[type="radio"]#checkbtnTwo{
+    display: none;
+}
+input[type="radio"]#checkbtnThree{
+    display: none;
 }
 .flex-carrousel label{
     text-align: center;
-    padding: 30px 0;
+    line-height: 40px;
+    padding: .8em;
     cursor: pointer;
-    width: 238px;
+    width: 240px;
+    height: 40px;
 }
-.active-label{
-    border-bottom: 4px solid var(--SoftRed);
-}
-.label-1{
-    margin-left: 0;
-}
-.label-2{
-    margin: 0 8px;
-}
-.label-3{
-    margin-right: 0;
-}
-.carrousel-feat{
-    padding: 30px;
-}
-.img-carr-1{
+.flex-carrousel .label-1::after{
+    content: "";
     display: none;
+    border-bottom: 4px solid red;
+    position: relative;
+    top: 2px;
 }
-input#checkbtnOne{
-    display: none;
-}
-input#checkbtnOne:checked~img{
-    display: block;
-    bottom: 0;
-}
-/*textarea/*{
-    display: none;
-}
-input#checktext{
-    display: none;
-}
-input#checktext:checked~textarea{
-    display: block;
-}*/
