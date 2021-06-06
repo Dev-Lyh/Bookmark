@@ -144,7 +144,7 @@ ul{
     top: 18rem;  
     border-bottom-right-radius: 250px;
     border-top-right-radius: 250px;
-    width: 540px;
+    width: 520px;
     height: 330px; 
     background-color: var(--SoftBlue);
 }
@@ -200,4 +200,79 @@ input[type="radio"]:checked + label {
     margin-top: 25px;
     color: var(--GrayBlue);
     line-height: 28px;
+}
+.t-tab2{
+    margin-left: 58px;
+    margin-bottom: 70px;
+}
+.t-tab3{
+    margin-left: 97px;
+    margin-bottom: 35px;
+}
+.box-t-dl{
+    display: flex;
+    justify-content: center;
+}
+.text-down{
+    text-align: center;
+    height: fit-content;
+    width: 550px;
+}
+.text-down h1{
+    color: var(--DarkBlue);
+}
+.text-down p{
+    color: var(--GrayBlue);
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.boxes{
+    width: 250px;
+    height: 300px;
+    background-color: var(--White);
+    box-shadow: 0 5px 15px var(--LightGray);
+    margin: 15px 20px;
+    border-radius: 15px;
+}
+.Chrome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ins-b{
+    background-image: url(
+        ./images/bg-dots.svg
+    );
+    background-size: 100
+    ;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 210px;
+    width: 250px;
+    height: 300px;
+    padding: 35px 0;
+    text-align: center;
+}
+.dl-btn{
+    width: 200px;
+    background-color: var(--SoftBlue);
+    color: var(--White);
+
+    transition-property: color, background-color;
+    transition-duration: 1s;
+}
+.dl-btn:hover{
+    border: 3px solid var(--SoftBlue);
+    background-color: var(--White);
+    color: var(--SoftBlue);
+}
+.t-dl{
+    margin: 20px 0;
+}
+.Firefox{
+    margin-top: 50px;
+}
+.Opera{
+    margin-top: 100px;
 }
