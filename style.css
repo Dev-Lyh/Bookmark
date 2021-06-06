@@ -165,7 +165,7 @@ ul{
     color: var(--GrayBlue);
     margin-bottom: 3rem;
 }
-input[type="radio"]{
+.radio{
     display: none;
 }
 .label-tab {
@@ -174,10 +174,10 @@ input[type="radio"]{
     align-items: center;
     justify-content: center;
 }
-input[type="radio"]:checked + label + .c-tab{
+.radio:checked + label + .c-tab{
     display: flex;    
 }
-input[type="radio"]:checked + label {
+.radio:checked + label {
     border-bottom: 5px solid var(--SoftRed);
     color: var(--DarkBlue);
 }
@@ -201,13 +201,9 @@ input[type="radio"]:checked + label {
     color: var(--GrayBlue);
     line-height: 28px;
 }
-.t-tab2{
-    margin-left: 58px;
-    margin-bottom: 70px;
-}
-.t-tab3{
-    margin-left: 97px;
-    margin-bottom: 35px;
+.download-part{
+    padding-top: 40px;
+    margin-bottom: 100px;
 }
 .box-t-dl{
     display: flex;
@@ -275,4 +271,97 @@ input[type="radio"]:checked + label {
 }
 .Opera{
     margin-top: 100px;
+}
+.faq-part{
+    margin: 15px 0;
+}
+.box-t-faq{
+    display: flex;
+    justify-content: center;
+}
+.t-faq{
+    width: 500px;
+    height: fit-content;
+    text-align: center;
+}
+.t-faq h1{
+    color: var(--DarkBlue);
+}
+.t-faq p{
+    color: var(--GrayBlue);
+    line-height: 28px;
+}
+.questRadio{
+    display: none;
+}
+.t-q-g{
+    display: flex;
+    width: 600px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.t-q1 , .t-q4{
+    border-top: 1px solid var(--GrayBlue);
+    border-bottom: 1px solid var(--GrayBlue);
+}
+.t-q2{
+    border-bottom: 1px solid var(--GrayBlue);
+}
+.t-q-g p{
+    font-weight: 400;
+    color: var(--DarkBlue);
+
+    transition-property: color;
+    transition-duration: .3s;
+}
+.t-q-g p:hover{
+    color: var(--SoftRed);
+}
+.label-quest{
+    display: flex;
+    justify-content: center;
+}
+.b-q-1{
+    padding-top: 50px;
+}
+.answer1{
+    display: flex;
+    justify-content: center;
+}
+.t-a1{
+    display: none;
+    width: 600px;
+    text-align: justify;
+    color: var(--DarkBlue);
+    padding: 10px 0;
+}
+.questRadio:checked~.label-quest  .t-q-g{
+    border-bottom: none;
+}
+.arrowBlue{
+    display: block;
+}
+.arrowRed{
+    display: none;
+}
+.questRadio:checked~.label-quest .t-q-g .arrowBlue{
+    display: none;
+}
+.questRadio:checked~.label-quest .t-q-g .arrowBlue+ .arrowRed{
+    display: block;
+    transform: rotate(180deg);
+}
+.questRadio:checked~.answer1 .t-a1{
+    display: block;
+    border-bottom: 1px solid var(--GrayBlue);
+}
+.questRadio:checked~.answer1 .t-a2{
+    display: block;
+    border-bottom: none;
+}
+.btn-quest{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
 }
