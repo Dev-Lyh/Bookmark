@@ -86,15 +86,6 @@ ul{
     margin-bottom: 25px;
     color: var(--GrayBlue);
 }
-.text-hero button{
-    width: 150px;
-    height: 45px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    cursor: pointer;
-    margin-top: 20px;
-}
 .btn-heroB{
     background-color: var(--SoftBlue);
     color: var(--White);
@@ -125,6 +116,7 @@ ul{
     color: var(--GrayBlue);
     border: 3px solid var(--GrayBlue);
 }
+/*!FEATURE PART*/
 .flex-text-feat{
     display: flex;
     justify-content: center;
@@ -143,95 +135,69 @@ ul{
     line-height: 28px;
     color: var(--GrayBlue);
 }
-.geral-feat-carr{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.flex-carrousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 82px;
-    width: 720px;
-    border-bottom: 1px solid var(--LightGray);
-
-}
-
-.carrousel-feat1 , .carrousel-feat2, .carrousel-feat3{
-    display: flex;
-    padding: 0px 100px;
-    margin-top: 80px;
-    align-items: center;
-    justify-content: center;
-}
-.carrousel-feat1::before , .carrousel-feat2::before, .carrousel-feat3::before{
+/*?CARROUSEL*/
+.feature-tab::before {
     content: '';
-    position: absolute; 
     z-index: -1;
-    width: 500px;
-    height: 330px;
-    background-color: var(--SoftBlue);
-    border-bottom-right-radius: 200px;
+    position: absolute;  
     left: 0;
-    top: 1100px;
+    top: 18rem;  
+    border-bottom-right-radius: 250px;
+    border-top-right-radius: 250px;
+    width: 540px;
+    height: 330px; 
+    background-color: var(--SoftBlue);
 }
-.text-feat{
-    padding-left: 80px;
+.feature-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;       
+    width: auto;  
+    position: relative; 
+    margin-bottom: 8rem; 
 }
-.text-feat button{
-    width: 150px;
-    height: 45px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
+.feature-tab label {
+    padding: 25px;
+    border-bottom: 2px solid var(--GrayBlue);
     cursor: pointer;
-    margin-top: 20px;
-}
-.carrousel-feat1 p , .carrousel-feat2 p , .carrousel-feat3 p{
+    font-size: 1.2rem;
     color: var(--GrayBlue);
-    margin-top: 25px;
-    margin-bottom: 25px;
-    line-height: 28px;
+    margin-bottom: 3rem;
 }
-.carrousel-feat1 h2 , .carrousel-feat2 h2, .carrousel-feat3 h2{
+input[type="radio"]{
+    display: none;
+}
+.label-tab {
+    text-align: center;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+input[type="radio"]:checked + label + .c-tab{
+    display: flex;    
+}
+input[type="radio"]:checked + label {
+    border-bottom: 5px solid var(--SoftRed);
+    color: var(--DarkBlue);
+}
+.feature-tab .c-tab {
+    display: none;
+    gap: 3rem; 
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 8%; 
+    order: 1;     
+    height: auto;
+    width: auto;     
+}
+.t-tab h2{
     color: var(--DarkBlue);
     margin-bottom: 25px;
 }
-.carrousel-feat1 , .carrousel-feat2, .carrousel-feat3{
-    display: none;    
-}
-input#checkbtnOne:checked~.carrousel-feat1{
-    display: flex;
-}
-input#checkbtnTwo:checked~.carrousel-feat2{
-    display: flex;
-    bottom: 0;
-}
-input#checkbtnThree:checked~.carrousel-feat3{
-    display: flex;
-}
-input[type="radio"]#checkbtnOne{
-    display: none;
-}
-input[type="radio"]#checkbtnTwo{
-    display: none;
-}
-input[type="radio"]#checkbtnThree{
-    display: none;
-}
-.flex-carrousel label{
-    text-align: center;
-    line-height: 40px;
-    padding: .8em;
-    cursor: pointer;
-    width: 240px;
-    height: 40px;
-}
-.flex-carrousel .label-1::after{
-    content: "";
-    display: none;
-    border-bottom: 4px solid red;
-    position: relative;
-    top: 2px;
+.t-tab p{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    color: var(--GrayBlue);
+    line-height: 28px;
 }

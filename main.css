@@ -16,3 +16,12 @@
 body{
     font-size: 18px;
 }
+button{
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
