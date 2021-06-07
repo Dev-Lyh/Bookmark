@@ -11,6 +11,10 @@ header{
     height: 100px;
     width: 100%;
 }
+.menus-local{
+    display: flex;
+    align-items: center;
+}
 ul{
     display: flex;
     align-items: center;
@@ -37,6 +41,7 @@ ul{
     width: 130px;
     margin-right: 0;
     margin-left: 25px;
+    margin-bottom: 15px;
     color: var(--White);
     border: none;
     border-radius: 5px;
@@ -442,4 +447,34 @@ ul{
 }
 .f-two span{
     font-style: normal;
+}
+.f-two span i{
+    color: var(--White);
+    font-size: 20pt;
+    margin: 0 5px;
+    cursor: pointer;
+
+    transition-property: color;
+    transition-duration: .3s;
+}
+.f-two span i:hover{
+    color: var(--SoftRed);
+}
+.btn-2{
+    height: 40px;
+    width: 130px;
+    margin-right: 0;
+    margin-left: 25px;
+    color: var(--White);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--SoftRed);
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition-property: color, background-color;
+    transition-duration: 1s;
 }
