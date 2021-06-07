@@ -415,7 +415,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 250px;
+    height: 100px;
     background-color: var(--DarkBlue);
 }
 .f-one{
@@ -423,4 +423,23 @@ ul{
 }
 .f-list{
     color: var(--White);
+}
+.f-list a {
+    text-decoration: none;
+    color: var(--White);
+    margin: 0 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    transition-property: color;
+    transition-duration: .3s;
+}
+.f-list a:hover{
+    color: var(--SoftRed);
+}
+.f-flex{
+    padding: 0 120px;
+}
+.f-two span{
+    font-style: normal;
 }
