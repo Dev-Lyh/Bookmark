@@ -308,14 +308,15 @@ ul{
 .t-q2{
     border-bottom: 1px solid var(--GrayBlue);
 }
-.t-q-g p{
+.t-q-g h4{
     font-weight: 400;
     color: var(--DarkBlue);
+    cursor: pointer;
 
     transition-property: color;
     transition-duration: .3s;
 }
-.t-q-g p:hover{
+.t-q-g h4:hover{
     color: var(--SoftRed);
 }
 .label-quest{
@@ -335,6 +336,11 @@ ul{
     text-align: justify;
     color: var(--DarkBlue);
     padding: 10px 0;
+}
+.t-a1 p{
+    font-size: 16px;
+    color: var(--GrayBlue);
+    line-height: 28px;
 }
 .questRadio:checked~.label-quest  .t-q-g{
     border-bottom: none;
@@ -364,4 +370,44 @@ ul{
     display: flex;
     justify-content: center;
     padding: 25px 0;
+}
+.email-part{
+    padding-top: 70px;
+}
+.box-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: var(--SoftBlue);
+}
+.static-mail{
+    text-align: center;
+}
+.static-mail .t-mail{
+    display: flex;
+    justify-content: center ;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--White);
+}
+.static-mail .t-mail h1{
+    width: 500px;
+    font-size: 28pt;
+}
+.static-mail p{
+    color: var(--White);
+}
+.static-mail input{
+    width: 320px;
+    height: 40px;
+}
+.i-mail{
+    padding-left: 10px; 
+    border-radius: 5px;
+    border: none;
+}
+.i-mail::placeholder{
+    color: var(--LightGray);
+    font-style: italic;
 }
