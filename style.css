@@ -411,3 +411,16 @@ ul{
     color: var(--LightGray);
     font-style: italic;
 }
+.f-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    background-color: var(--DarkBlue);
+}
+.f-one{
+    display: flex;
+}
+.f-list{
+    color: var(--White);
+}
